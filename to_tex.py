@@ -12,7 +12,8 @@ replace_dict = {'$'  : '$\\$$',
                 '\n' : '',
                 '  ' : '\\tab ',
                 '\t' : '\\tab ',
-                '_'  : '$\\_$'}
+                '_'  : '$\\_$',
+                '^'  : '\\string^'}
 parser = argparse.ArgumentParser(description='file to copy')
 parser.add_argument('-f', '--file', type=str, help='Path to the file')
 args = parser.parse_args()
